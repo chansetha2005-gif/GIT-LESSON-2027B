@@ -1,0 +1,238 @@
+/* ╔══════════════════════════════════════════════╗
+   ║                    Help!                     ║
+   ╠══════════════════════════════════════════════╣
+   ║ 1. Add the following background code inside  ║
+   ║    the `main` selector:                      ║
+   ║                                              ║
+   ║    background: linear-gradient(              ║
+   ║        to bottom,                            ║
+   ║        cornflowerblue 40%,                   ║
+   ║        cornsilk 40%                          ║
+   ║    );                                        ║
+   ║                                              ║
+   ║ 2. Add transition effects for smooth hover:  ║
+   ║                                              ║
+   ║    `.card`                                   ║
+   ║    transition: 0.3s;                         ║
+   ║                                              ║
+   ║    `.btn`                                    ║
+   ║    transition: background 0.3s;              ║
+   ╚══════════════════════════════════════════════╝ */
+
+/* =========================
+   Global Styles
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* =========================
+   Scrollbar Styles
+========================= */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000;
+}
+
+body {
+
+    height: 140vh;
+    background: linear-gradient(to bottom,
+            cornflowerblue 40%,
+            cornsilk 40%);
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+main,
+footer {
+    padding: 24px;
+}
+
+/* header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #003366;
+    flex: 0.6;
+    color: whitesmoke;
+}
+
+nav ul {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    padding: 8px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.active a {
+    border-radius: 4px;
+    box-shadow: 0px 0px 1px 1px white;
+    font-weight: bold;
+}
+
+ul .active a:hover {
+    background: white;
+    font-weight: bold;
+    border-radius: 4px;
+    color: #003366;
+}
+
+/* main */
+main {
+    display: flex;
+    gap: 32px;
+    flex: 10;
+}
+
+.btn:hover {
+
+    border: 0px solid gray;
+    background: #2D6EE8;
+}
+
+/* main-contain */
+.main-content {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    flex: 2;
+
+}
+/* hero */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    flex: 1.2;
+    color: white;
+    font-weight: bold;
+}
+
+.hero p {
+    font-weight: 100;
+}
+
+.hero .btn {
+    padding: 8px 12px;
+    background: #003366;
+    color: white;
+    font-weight: bold;
+    border: 0px solid gray;
+    box-shadow: 0px 1px 1px 1px rgba(128, 128, 128, 0.4);
+    border-radius: 4px;
+}
+
+.hero .btn:hover {
+    border: 0px solid gray;
+    background: #2D6EE8;
+}
+/*.courses  */
+.courses {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+}
+
+.course-list {
+    display: flex;
+    gap: 24px;
+}
+
+.card {
+    padding: 24px 32px 24px 24px;
+    border-radius: 8px;
+    background: white;
+    width: 32%;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 1px 1px rgba(128, 128, 128, 0.4);
+}
+
+/* register */
+.register {
+    border-radius: 8px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background: white;
+    font-weight: bold;
+    box-shadow: 0px 0px 1px 1px rgba(128, 128, 128, 0.4);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 12px;
+
+}
+
+form input,
+form select,
+form textarea,
+form button {
+    padding: 8px;
+    border-radius: 4px;
+    border: 0 solid;
+    box-shadow: 0px 0px 1px 1px rgba(128, 128, 128, 0.4);
+}
+
+div input {
+    box-shadow: none;
+}
+
+form button {
+    background: #003366;
+    color: white;
+}
+
+form button:hover {
+    padding: 8px;
+    border: 0px solid #2D6EE8;
+    background: #2D6EE8;
+}
+
+/* footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    background: #003366;
+    color: white;
+    flex: 0.5;
+}
